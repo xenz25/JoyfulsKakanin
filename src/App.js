@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { CssBaseline } from "@material-ui/core";
 import Header from "./components/Header";
 import Products from "./components/Products";
+import AboutUs from "./components/AboutUs";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -20,6 +21,7 @@ export default function () {
       <CssBaseline />
       <Header />
       <Products />
+      <AboutUs />
     </div>
   );
 }

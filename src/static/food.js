@@ -6,7 +6,7 @@ const foods = [
   },
   {
     title: 'Special Tibok-Tibok (Maja Blanca) on a tub',
-    desc: "Our Speciaal Tibok-Tibok with Cheese and Latik toppings on a tub is perfect for merienda and special occasions!",
+    desc: "Our Special Tibok-Tibok with Cheese and Latik toppings on a tub is perfect for merienda and special occasions!",
     imageUrl: process.env.PUBLIC_URL + './assets/maja.png'
   },
   {

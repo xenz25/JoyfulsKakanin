@@ -10,22 +10,25 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 350,
+    height: 450,
     background: "rbga(0,0,0,0.5)",
-    margin: "20px",
-    "&:hover": { transform: "scale3d(1.05, 1.05, 1)"},
+    color: "black",
+    
+    "&:hover": {
+      transition: "background 0.5s, color 0.5s, transform 0.5s",
+      transform: "scale3d(1.02, 1.02, 1)",
+      background: "#953d8d",
+      color: "#f7e508",
+      boxShadow: "0 3px 5px 2px gray",
+    },
   },
   media: {
     height: 250,
+    width: "100%",
   },
-  title: {
-    fontWeight: "bold",
-    fontSize: "2rem",
-    color: "#598f1e",
-  },
-  desc: {
-    fontSize: "1.1rem",
-    color: "#00000",
-  },
+  card_actions: {
+    justifyContent: "space-between",
+  }
 }));
 
 export default function ImageCard({ food }) {
@@ -41,16 +44,14 @@ export default function ImageCard({ food }) {
       <CardContent>
         <Typography
           gutterBottom
+          sx={{ fontWeight: 'bold' }}
           variant="h5"
           component="div"
-          className={classes.title}
         >
           {food.title}
         </Typography>
         <Typography
           variant="body2"
-          color="text.secondary"
-          className={classes.desc}
         >
           {food.desc}
         </Typography>

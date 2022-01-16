@@ -1,5 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import Grid from '@mui/material/Grid';
 import ImageCard from "./ImageCard";
 import foods from "../static/food";
 
@@ -19,9 +20,38 @@ export default function () {
   const classes = useStyles();
   return (
     <div className={classes.root} id="foods-to-try">
-      <ImageCard food={foods[0]} />
-      <ImageCard food={foods[1]} />
-      <ImageCard food={foods[2]} />
+      <Grid sx={{ flexGrow: 1 }} container spacing={2}>
+      <Grid item xs={4}>
+        <Grid container justifyContent="center">
+              <ImageCard food={foods[0]} />
+            </Grid>
+        </Grid>
+        <Grid item xs={4}>
+        <Grid container justifyContent="center">
+              <ImageCard food={foods[1]} />
+            </Grid>
+        </Grid>
+        <Grid item xs={4}>
+        <Grid container justifyContent="center">
+              <ImageCard food={foods[2]} />
+            </Grid>
+        </Grid>
+        <Grid item xs={4}>
+        <Grid container justifyContent="center">
+              <ImageCard food={foods[3]} />
+            </Grid>
+        </Grid>
+        <Grid item xs={4}>
+        <Grid container justifyContent="center">
+              <ImageCard food={foods[4]} />
+            </Grid>
+        </Grid>
+        <Grid item xs={4}>
+        <Grid container justifyContent="center">
+              <ImageCard food={foods[5]} />
+            </Grid>
+        </Grid>
+      </Grid>
     </div>
   );
 }

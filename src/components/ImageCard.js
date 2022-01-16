@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 350,
     background: "rbga(0,0,0,0.5)",
     margin: "20px",
+    "&:hover": { transform: "scale3d(1.05, 1.05, 1)"},
   },
   media: {
     height: 250,
@@ -24,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
   desc: {
     fontSize: "1.1rem",
     color: "#00000",
-  }
+  },
 }));
 
 export default function ImageCard({ food }) {

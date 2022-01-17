@@ -4,7 +4,9 @@ import {
   AppBar,
   Box,
   Button,
+  Container,
   Fade,
+  Grid,
   IconButton,
   Toolbar,
 } from "@material-ui/core";
@@ -52,42 +54,48 @@ export default function Header() {
       exact="true"
       offset={-80}
     >
-      <AppBar className={classes.appbar}>
-        <Toolbar className={classes.wrapper}>
-          <img
-            src={image}
-            width={182}
-            height={64}
-            className={classes.logo}
-          ></img>
+      <Grid>
+        <AppBar className={classes.appbar}>
+          <Toolbar className={classes.wrapper}>
+            <img
+              src={image}
+              width={182}
+              height={64}
+              className={classes.logo}
+            ></img>
 
-          <Scroll to="home" smooth={true}>
-            <Button className={classes.button}>Home</Button>
-          </Scroll>
+            <Grid item xs={10}>
+              <Scroll to="home" smooth={true}>
+                <Button className={classes.button}>Home</Button>
+              </Scroll>
 
-          <Scroll to="foods-to-try" smooth={true}>
-            <Button className={classes.button}>Products</Button>
-          </Scroll>
+              <Scroll to="foods-to-try" smooth={true}>
+                <Button className={classes.button}>Products</Button>
+              </Scroll>
 
-          <Scroll to="about-us" smooth={true}>
-            <Button className={classes.button}>About Us</Button>
-          </Scroll>
+              <Scroll to="about-us" smooth={true}>
+                <Button className={classes.button}>About Us</Button>
+              </Scroll>
 
-          <Button className={classes.button}>Contact Us</Button>
+              <Button className={classes.button}>Contact Us</Button>
+            </Grid>
 
-          <IconButton>
-            <PhoneIcon className={classes.icon} />
-          </IconButton>
+            <Grid item xs={2}>
+              <IconButton>
+                <PhoneIcon className={classes.icon} />
+              </IconButton>
 
-          <IconButton>
-            <MailIcon className={classes.icon} />
-          </IconButton>
+              <IconButton>
+                <MailIcon className={classes.icon} />
+              </IconButton>
 
-          <IconButton>
-            <FacebookIcon className={classes.icon} />
-          </IconButton>
-        </Toolbar>
-      </AppBar>
+              <IconButton>
+                <FacebookIcon className={classes.icon} />
+              </IconButton>
+            </Grid>
+          </Toolbar>
+        </AppBar>
+      </Grid>
 
       <Fade in={true} {...(true ? { timeout: 1000 } : {})}>
         <div className={classes.content}>

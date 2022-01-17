@@ -20,33 +20,33 @@ export default function () {
   const classes = useStyles();
   return (
     <div className={classes.root} id="foods-to-try">
-      <Grid sx={{ flexGrow: 1 }} container spacing={2}>
-      <Grid item xs={4}>
+      <Grid sx={{ flexGrow: 1 }} container spacing={2} justifyContent="center">
+      <Grid item md={6} lg={4} xl={4} sm={8}>
         <Grid container justifyContent="center">
               <ImageCard food={foods[0]} />
             </Grid>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item md={6} lg={4} xl={4} sm={8}>
         <Grid container justifyContent="center">
               <ImageCard food={foods[1]} />
             </Grid>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item md={6} lg={4} xl={4} sm={8}>
         <Grid container justifyContent="center">
               <ImageCard food={foods[2]} />
             </Grid>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item md={6} lg={4} xl={4} sm={8}>
         <Grid container justifyContent="center">
               <ImageCard food={foods[3]} />
             </Grid>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item md={6} lg={4} xl={4} sm={8}>
         <Grid container justifyContent="center">
               <ImageCard food={foods[4]} />
             </Grid>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item md={6} lg={4} xl={4} sm={8}>
         <Grid container justifyContent="center">
               <ImageCard food={foods[5]} />
             </Grid>

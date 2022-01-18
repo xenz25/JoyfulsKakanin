@@ -9,11 +9,15 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 350,
-    height: 450,
+    maxWidth: 300,
+    height: 325,
+    objectFit: "100%",
     background: "rbga(0,0,0,0.5)",
     color: "black",
-    
+    [theme.breakpoints.down("md")]:{
+      flexDirection: 'column',
+      maxHeight: 300,
+    },
     "&:hover": {
       transition: "background 0.5s, color 0.5s, transform 0.5s",
       transform: "scale3d(1.02, 1.02, 1)",
@@ -23,8 +27,11 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   media: {
-    height: 250,
+    height: 200,
     width: "100%",
+    [theme.breakpoints.down("md")]:{
+      flexDirection: 'column',
+    },
   },
   card_actions: {
     justifyContent: "space-between",
@@ -50,15 +57,7 @@ export default function ImageCard({ food }) {
         >
           {food.title}
         </Typography>
-        <Typography
-          variant="body2"
-        >
-          {food.desc}
-        </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small">Add to Cart</Button>
-      </CardActions>
     </Card>
   );
 }

@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { CssBaseline } from "@material-ui/core";
 import Header from "./components/Header";
+import Home from "./components/Home";
 import Products from "./components/Products";
 import AboutUs from "./components/AboutUs";
 
@@ -19,6 +20,7 @@ export default function () {
   return (
     <div className={classes.root}>
       <CssBaseline />
+      <Home />
       <Header />
       <Products />
       <AboutUs />

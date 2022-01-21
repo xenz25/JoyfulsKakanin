@@ -16,6 +16,8 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import { Link as Scroll } from "react-scroll";
 import image from "../logo.png";
 import "./Header.css";
+import { flexbox } from "@mui/system";
+
 
 const useStyles = makeStyles((theme) => ({
   appbar: {
@@ -31,9 +33,6 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     height: "100vh",
-    height: "100vh",
-    [theme.breakpoints.down("md")]: {
-      flexDirection: "column",
   },
   icon: {
     color: "#598f1e",
@@ -62,7 +61,7 @@ export default function Header() {
       <Grid>
         <AppBar className={classes.appbar}>
           <Toolbar className={classes.wrapper}>
-            <img
+            <img alt=""
               src={image}
               width={182}
               height={64}
@@ -103,62 +102,59 @@ export default function Header() {
       </Grid>
 
       <Fade in={true} {...(true ? { timeout: 1000 } : {})}>
-        <div className={classes.content}>
-          <h1>
-            Content here <br />
-            use grid here
-          </h1>
-        </div>
-      </Fade>
-    </div>
-  );
-}
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    height: "100vh",
-    [theme.breakpoints.down("md")]: {
-      flexDirection: "column",
-    },
-  },
-}));
-
-export default function () {
-  const classes = useStyles();
-  return (
-    <div className={classes.root} id="home">
+      <div className="home">
       <h1
         style={{
           textAlign: "center",
-          fontSize: "50px",
-          fontWeight: "bold",
-          color: "purple",
+          fontSize: "70px",
+          fontWeight: "900",
+          color: "#953d8d",
         }}
       >
-        {" "}
-        About Us
+        {""}
+        JOYFUL'S KAKANIN
       </h1>
-      <div className="HomeContents">
-        <img className="homeAssorted" src="./assets/logo.png" alt="" />
-        <div className="HometDetails">
-          <h2 className="homeHeading">
-            <span>Welcome to</span> Joyful's Kakanin
-          </h2>
-          <p className="aboutText">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nihil
-            molestias harum doloribus necessitatibus! Ipsam tenetur doloremque,
-            iste, ipsa labore laborum in sed ipsum qui fuga quis distinctio
-            aliquid? Aspernatur sed id quos adipisci ab, cupiditate, dolor
-            reprehenderit qui, facilis aut ut eos! Rem nam sed harum optio sit
-            quis temporibus, similique vero debitis illo inventore cum quo
-            ducimus quam voluptatum deleniti veniam, modi, est dolores delectus?
-            Fugiat, pariatur cum corporis cumque magnam atque totam asperiores
-            omnis eius explicabo obcaecati veniam neque facilis officia
-            consequuntur autem magni doloremque voluptas nisi, quas id. Iste
-            suscipit dicta perspiciatis nobis error alias minus.
-          </p>
-        </div>
+      
+      <div className="homeline2"></div>
+      <h2
+        style={{
+          textAlign: "center",
+          fontSize: "30px",
+          fontWeight: "200",
+          fontStyle: "italic",
+          color: "#953d8d",
+          marginTop: -60,
+          marginLeft: 340,
+        }}
+      >
+        {""}
+        "Gawang Kapampangan"
+      </h2>
+      <div className="homeline3">
+      <h3
+        style={{
+          textAlign: "left",
+          fontSize: "20px",
+          fontWeight: "360",
+          fontStyle: "italic",
+          color: "#598f1e",
+          marginLeft: 230,
+          marginRight: 250,
+          marginButtom: 30,
+        }}
+      >
+    
+        <p>Have an occasion?  Or just want some kakanins?  Come and explore
+        what Joyful's Kakanin can bring to your tables!"</p>
+      </h3>
       </div>
+        </div>
+      
+      </Fade>
+      <div><img className="HomeContents" src="./assets/assorted2.png" alt="" /></div>
     </div>
+    
+    
   );
+
 }

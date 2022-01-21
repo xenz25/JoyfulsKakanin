@@ -1,65 +1,26 @@
-.HomeContents .HomeAssorted {
-    height: 260px;
-  }
-  #home {
-    margin-top: 0em;
-  }
-  .button {
-    background-color: maroon;
-    color: white;
-    padding: 5px 10px;
-    margin: 0 auto;
-    display: block;
-    cursor: pointer;
-  }
-  .HomeContents {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 4em 5em 4em 8em;
-  }
-  .HomeContents .HomeDetails {
-    width: 50%;
-    box-shadow: 0 0 40px #00000015;
-    border-radius: 3em;
-    padding: 4em 5em;
-    background-color: white;
-  }
-  .HomeContents .HomeDetails  .aboutText {
-    font-size: 1.3em;
-    font-weight: 500;
-    color: #598f1e;
-  }
-  .HomeContents .homeHeading {
-    color: #598f1e;
-    font-size: 2em;
-    font-weight: 600;
-  }
-  .HomeContents .homeHeading span {
-    font-weight: 300;
-    color: #e1eb9f;
-  }
-  
-  /* media */
-  @media (max-width: 992px) {
-    .HomeContents {
-      display: block;
-    }
-    .HomeContents.HomeAssorted {
-      height: 120px;
-      margin-bottom: 2em;
-    }
-    .HomeContents .HomeDetails {
-      width: 100%;
-      padding: 2em;
-    }
-    .HomeContents {
-      padding: 3em;
-    }
-    .makeStyles-root-9 {
-      display: block;
-    }
-    #home{
-      margin-top: 1em;
-    }
-  }
+.HomeAssorted {
+  height: 5000px;
+}
+.Home .homeline2 {
+  color: #598f1e;
+  font-size: 2em;
+  font-weight: 600;
+  padding: 2em 0em 0em 10em;
+}
+.Home .homeline3 {
+  color: #598f1e;
+  font-size: 100em;
+  font-weight: 600;
+}
+
+.HomeContents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em 0em 0em 45em;
+  height: 500px;
+  margin-top: 5em;
+  margin-left: -40em;
+  margin-right: 5em;
+}
+

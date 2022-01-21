@@ -4,6 +4,14 @@
   #home {
     margin-top: 0em;
   }
+  .button {
+    background-color: maroon;
+    color: white;
+    padding: 5px 10px;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+  }
   .HomeContents {
     display: flex;
     align-items: center;

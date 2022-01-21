@@ -15,6 +15,7 @@ import MailIcon from "@mui/icons-material/Mail";
 import PhoneIcon from "@mui/icons-material/Phone";
 import { Link as Scroll } from "react-scroll";
 import image from "../logo.png";
+import "./Header.css";
 
 const useStyles = makeStyles((theme) => ({
   appbar: {
@@ -22,6 +23,7 @@ const useStyles = makeStyles((theme) => ({
   },
   wrapper: {
     width: "100%",
+    height: 100,
     margin: "0 auto",
   },
   root: {
@@ -29,6 +31,9 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     height: "100vh",
+    height: "100vh",
+    [theme.breakpoints.down("md")]: {
+      flexDirection: "column",
   },
   icon: {
     color: "#598f1e",
@@ -105,6 +110,55 @@ export default function Header() {
           </h1>
         </div>
       </Fade>
+    </div>
+  );
+}
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    height: "100vh",
+    [theme.breakpoints.down("md")]: {
+      flexDirection: "column",
+    },
+  },
+}));
+
+export default function () {
+  const classes = useStyles();
+  return (
+    <div className={classes.root} id="home">
+      <h1
+        style={{
+          textAlign: "center",
+          fontSize: "50px",
+          fontWeight: "bold",
+          color: "purple",
+        }}
+      >
+        {" "}
+        About Us
+      </h1>
+      <div className="HomeContents">
+        <img className="homeAssorted" src="./assets/logo.png" alt="" />
+        <div className="HometDetails">
+          <h2 className="homeHeading">
+            <span>Welcome to</span> Joyful's Kakanin
+          </h2>
+          <p className="aboutText">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nihil
+            molestias harum doloribus necessitatibus! Ipsam tenetur doloremque,
+            iste, ipsa labore laborum in sed ipsum qui fuga quis distinctio
+            aliquid? Aspernatur sed id quos adipisci ab, cupiditate, dolor
+            reprehenderit qui, facilis aut ut eos! Rem nam sed harum optio sit
+            quis temporibus, similique vero debitis illo inventore cum quo
+            ducimus quam voluptatum deleniti veniam, modi, est dolores delectus?
+            Fugiat, pariatur cum corporis cumque magnam atque totam asperiores
+            omnis eius explicabo obcaecati veniam neque facilis officia
+            consequuntur autem magni doloremque voluptas nisi, quas id. Iste
+            suscipit dicta perspiciatis nobis error alias minus.
+          </p>
+        </div>
+      </div>
     </div>
   );
 }

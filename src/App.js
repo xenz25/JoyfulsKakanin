@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import Menu from './pages/Menu'
 import About from "./pages/About";
-import Contact from "./pages/Contact";
+import Contact from "./pages/Contact"
 
 export default function () {
   return (

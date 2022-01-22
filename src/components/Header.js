@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import {
   AppBar,
@@ -46,6 +47,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+
+
 export default function Header() {
   const classes = useStyles();
   return (
@@ -61,7 +64,7 @@ export default function Header() {
       <Grid>
         <AppBar className={classes.appbar}>
           <Toolbar className={classes.wrapper}>
-            <img alt=""
+            <img alt="logo"
               src={image}
               width={182}
               height={64}
@@ -96,6 +99,7 @@ export default function Header() {
               <IconButton>
                 <FacebookIcon className={classes.icon} />
               </IconButton>
+              
             </Grid>
           </Toolbar>
         </AppBar>
@@ -147,6 +151,23 @@ export default function Header() {
         <p>Have an occasion?  Or just want some kakanins?  Come and explore
         what Joyful's Kakanin can bring to your tables!"</p>
       </h3>
+
+      <div className="App">
+        <Scroll to="foods-to-try" smooth={true}>
+        <Button
+        style={{
+          textAlign: "center",
+          fontSize: "25px",
+          fontWeight: "900",
+          color: "white",
+          background: "#24640E",
+          borderRadius: 25,
+          width: 280,
+          height: 70,
+          marginLeft: 400,
+        }}>Products</Button>
+        </Scroll>
+      </div>
       </div>
         </div>
       

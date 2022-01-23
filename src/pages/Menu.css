@@ -5,10 +5,13 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: white;
 }
 .menu .menuTitle {
   /* font-family: cursive; */
   font-size: 60px;
+  background-color: white;
+  
 }
 
 .menuList {
@@ -17,6 +20,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
+  background-color: white;
 }
 
 /* MENU ITEM STYLING */
@@ -32,6 +36,16 @@
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
   transition: 0.3s ease-in;
   cursor: pointer;
+  transform: translateY(20px);
+}
+.button {
+  display: none;
+}
+
+.menuItem:hover > .button, .button:hover {
+  margin-left: 20px;
+  display: inline-block;
+  
 }
 
 .menuItem div {
@@ -44,7 +58,7 @@
   background-size: cover;
 }
 
-.menuItem h1,
+.menuItem h2,
 .menuItem p {
   margin-left: 20px;
 }

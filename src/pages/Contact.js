@@ -1,6 +1,6 @@
 import React from "react";
-import Background from "../assets/background.jpg";
-import "../components/Contact.css";
+import Background from "../assets/background1.jpg";
+import "./Contact.css";
 
 function Contact() {
   return (

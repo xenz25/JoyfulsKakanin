@@ -1,7 +1,7 @@
 import React from "react";
 import { MenuList } from "../static/MenuList";
 import MenuItem from "../components/MenuItem";
-import "../components/Menu.css";
+import "./Menu.css";
 
 function Menu() {
   return (

@@ -1,11 +1,16 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
-function MenuItem({ image, name, price }) {
+function MenuItem({ image, name, price,description }) {
   return (
     <div className="menuItem">
       <div style={{ backgroundImage: `url(${image})` }}> </div>
-      <h1> {name} </h1>
-      <p> {price}php </p>
+        <h2> {name} </h2>
+        <p> {price}php </p>
+        <p>{description}</p>
+        <button className="button">
+          <Link to="/contact" style={{ textDecoration: 'none' }}>Contact Us</Link>
+        </button>
     </div>
   );
 }

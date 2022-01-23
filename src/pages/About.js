@@ -1,6 +1,6 @@
 import React from "react";
-import Background from "../assets/background.jpg";
-import "../components/About.css";
+import Background from "../assets/background2.jpg";
+import "./About.css";
 function About() {
   return (
     <div className="about">

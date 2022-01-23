@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: row;
   border-bottom: white 300px;
-  box-shadow: 0 10px 5px #020202;
+  box-shadow: 0 3px 5px #020202;
 }
 
 .navbar .leftSide {

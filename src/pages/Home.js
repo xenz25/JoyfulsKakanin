@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import BannerImage from "../assets/background.jpg";
-import "../components/Home.css";
+import "./Home.css";
 
 function Home() {
   return (

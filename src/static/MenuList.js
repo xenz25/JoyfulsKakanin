@@ -16,7 +16,7 @@ export const MenuList = [
     name: "Sapin-Sapin",
     image: SapinSapin,
     price: 1000,
-    description: "Sapin-sapin is a layered glutinous rice and coconut dessert in Philippine cuisine. It is made from rice flour, coconut milk, sugar, water, flavoring and coloring.",
+    description: "Sapin-sapin is a layered glutinous rice and coconut dessert in Philippine cuisine.",
   },
   {
     name: "Turon with Langka",
@@ -28,7 +28,7 @@ export const MenuList = [
     name: "Bilo-Bilo",
     image: BiloBilo,
     price: 1000,
-    description: "Ginataang Bilo-bilo is a dessert composed of glutinous rice balls (locally known as bilo-bilo), coconut cream, sugar, sago pearls, and ripe jackfruit.",
+    description: "Ginataang Bilo-bilo is a dessert composed of glutinous rice balls (bilo-bilo), coconut cream, sugar, sago pearls, and ripe jackfruit.",
   },
   {
     name: "Minatamis na Langka",

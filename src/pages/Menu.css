@@ -5,13 +5,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: white;
+  background-color: #f5ebf5;
 }
 .menu .menuTitle {
   /* font-family: cursive; */
   font-size: 60px;
-  background-color: white;
-  
+  font-family: 'Product Sans';
 }
 
 .menuList {
@@ -20,7 +19,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
-  background-color: white;
 }
 
 /* MENU ITEM STYLING */
@@ -56,11 +54,17 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #f5ebf5;
 }
 
-.menuItem h2,
+.menuItem h2 {
+  margin-left: 20px;
+  font-family: 'Product Sans';
+}
+
 .menuItem p {
   margin-left: 20px;
+  font-family: 'Product Sans';
 }
 
 @media only screen and (max-width: 1300px) {
@@ -73,4 +77,9 @@
   .menuList {
     grid-template-columns: 1fr;
   }
+}
+
+@font-face {
+  font-family: 'Product Sans';
+  src: local('Product Sans'), url(../assets/fonts/product-sans/Product\ Sans\ Regular.ttf) format('truetype');
 }

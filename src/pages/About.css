@@ -23,17 +23,18 @@
 
 .aboutBottom p {
   width: 800px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: serif;
+  font-size: large;
 }
 
 .about .aboutBottom h1 {
   font-weight: 400;
   font-size: 70px;
   color: black;
-  height: 30px;
+  height: 50px;
   display: flex;
   justify-content: center;
   transform: translateY(-40px);
-  font-family: 'Times New Roman', Times, serif;
+  font-family: system-ui;
   font-weight: bold;
 }

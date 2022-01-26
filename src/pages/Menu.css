@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #f5ebf5;
+  background-color: #ebebeb;
 }
 .menu .menuTitle {
   /* font-family: cursive; */
@@ -29,12 +29,13 @@
   height: 350px;
   margin: 20px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  background-color: white;
 }
 .menuItem:hover {
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
   transition: 0.3s ease-in;
   cursor: pointer;
-  transform: translateY(20px);
+  transform: translateY(5px);
 }
 .button {
   display: none;
@@ -54,7 +55,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #f5ebf5;
+  background-color: white;
 }
 
 .menuItem h2 {

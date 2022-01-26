@@ -23,7 +23,7 @@
 
 .aboutBottom p {
   width: 800px;
-  font-family: serif;
+  font-family: 'Product Sans';
   font-size: large;
 }
 
@@ -35,6 +35,29 @@
   display: flex;
   justify-content: center;
   transform: translateY(-40px);
-  font-family: system-ui;
+  font-family: 'Product Sans';
   font-weight: bold;
+}
+
+@media only screen and (max-width: 650px) {
+  .about {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutBottom p {
+    font-size: 20px;
+    width: auto;
+    height: 40px;
+    color: black;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about .aboutBottom h1 {
+    font-size: 40px;
+    width: auto;
+    height: 10px;
+    color: black;
+  }
 }

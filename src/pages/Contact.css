@@ -21,7 +21,7 @@
 }
 
 .contact .rightSide h1 {
-  font-family: arial;
+  font-family: 'Product Sans';
   font-weight: 10;
   font-size: 50px;
   margin-left: 30px;
@@ -76,4 +76,10 @@ form button {
   color: whitesmoke;
   font-size: 15px;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 650px) {
+  .contact .leftSide {
+    display: none;
+  }
 }

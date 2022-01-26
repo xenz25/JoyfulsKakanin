@@ -77,6 +77,9 @@
 @media only screen and (max-width: 800px) {
   .menuList {
     grid-template-columns: 1fr;
+    width: auto;
+    align-items: center;
+    justify-content: center;
   }
 }
 

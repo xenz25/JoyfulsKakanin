@@ -1,5 +1,5 @@
 import React from "react";
-import Background from "../assets/background5.jpg";
+import Background from "../assets/background7.jpg";
 import "./Contact.css";
 
 function Contact() {

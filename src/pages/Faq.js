@@ -1,0 +1,24 @@
+import React from 'react';
+import "./Faq.css";
+
+
+function Faq() {
+  return (
+    <div className='faq'>
+      <h1 className='content'>
+        <h1>Where are you located?</h1>
+        <p>= Address.</p>
+        <h1>Do you accept delivery?</h1>
+        <p>= Yes, Near San Jose Del Monte Only.</p>
+        <h1>Do you have other branches?</h1>
+        <p>= Currently, we don't have any existing branches.</p>
+        <h1>What container sizes are available for orders?</h1>
+        <p>= Sizes varies on product but in general we offer tubs at 500ml and 14 inches and 16 inches Bilao.</p>
+        <h1>Do you have Facebook page?</h1>
+        <p>= Currently, we don't have any Facebook page. But you can go to the Contact Us page to send a message or request.</p>
+      </h1>
+    </div>
+  );
+}
+
+export default Faq;

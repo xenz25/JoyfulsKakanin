@@ -1,12 +1,14 @@
 import React from 'react';
+import Background from "../assets/background6.jpg";
 import "./Faq.css";
 
 
 function Faq() {
   return (
-    <div className='faq'>
-      <h1 className='content'>
-        <h1>Where are you located?</h1>
+    <div className="faq" style={{ backgroundImage: `url(${Background})` }}>
+      <div className="content">
+      <a className='title'>Frequently Asked Questions</a>
+      <h1>Where are you located?</h1>
         <p>= Address.</p>
         <h1>Do you accept delivery?</h1>
         <p>= Yes, Near San Jose Del Monte Only.</p>
@@ -16,7 +18,7 @@ function Faq() {
         <p>= Sizes varies on product but in general we offer tubs at 500ml and 14 inches and 16 inches Bilao.</p>
         <h1>Do you have Facebook page?</h1>
         <p>= Currently, we don't have any Facebook page. But you can go to the Contact Us page to send a message or request.</p>
-      </h1>
+      </div>
     </div>
   );
 }

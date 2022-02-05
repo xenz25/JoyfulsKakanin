@@ -11,18 +11,28 @@
   font-family: 'Product Sans';
 }
 
+
 .content {
   display: flex;
   flex-direction: column;
-  align-items: left;
-  margin-left: 20px;
+  align-items: center;
+}
+
+.content a {
+  font-weight: 400;
+  font-size: 50px;
+  height: 50px;
+  color: white;
+  display: flex;
+  font-family: 'Product Sans';
+  font-weight: bold;
 }
 
 .content h1 {
   font-weight: 400;
   font-size: 30px;
   height: 50px;
-  color: black;
+  color: white;
   display: flex;
   font-family: 'Product Sans';
   font-weight: bold;
@@ -32,5 +42,5 @@
   width: 900px;
   font-family: 'Product Sans';
   font-size: 25px;
-  color: black;
+  color: white;
 }

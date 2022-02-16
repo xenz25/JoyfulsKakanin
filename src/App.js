@@ -8,6 +8,7 @@ import Menu from './pages/Menu'
 import About from "./pages/About";
 import Contact from "./pages/Contact"
 import Faq from "./pages/Faq"
+import ThankYou from "./pages/ThankYou"
 
 export default function () {
   return (
@@ -20,6 +21,7 @@ export default function () {
           <Route path="/about" exact component={About} />
           <Route path="/contact" exact component={Contact} />
           <Route path="/faq" exact component={Faq} />
+          <Route path="/thankyou" exact component={ThankYou} />
         </Switch>
         <Footer />
       </Router>
